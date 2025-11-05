@@ -8,6 +8,10 @@
 	padding-top: 6em;
 	gap: 1em;
 
+	@media (width < 950px) {
+		padding: 2em;
+	}
+
 	a {
 		color: #2977b8;
 	}
