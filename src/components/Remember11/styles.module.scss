@@ -7,6 +7,11 @@
 	padding-top: 6em;
 	gap: 2em;
 
+	@media (width < 950px) {
+		padding: 2em;
+		padding-top: 6em;
+	}
+
 	a {
 		color: #2977b8;
 	}

@@ -36,6 +36,7 @@
 
 		@media (width < 950px) {
 			justify-content: center;
+			font-size: clamp(0.7em, 0.525em + 0.8vw, 1em);
 			background-image: linear-gradient(to bottom, #e2edf3aa 50%, #e2edf300);
 
 			&.dark {
