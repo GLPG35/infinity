@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #040c22;
+
+	&-thumb {
+		background-color: #2977b8;
+	}
+}
+
+body {
+	font-family: 'Zen Antique', serif;
+	font-weight: 400;
+}

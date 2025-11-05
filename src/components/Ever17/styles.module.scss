@@ -1,0 +1,165 @@
+.ever17 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	padding: 5em;
+	padding-top: 6em;
+	gap: 2em;
+
+	a {
+		color: #2977b8;
+	}
+
+	.info {
+		display: flex;
+		min-height: calc(100dvh - 8em);
+		gap: 5em;
+
+		@media (width < 950px) {
+			flex-direction: column;
+			gap: 2em;
+
+			.cover {
+				aspect-ratio: 16 / 9 !important;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.cover {
+			height: 100%;
+			max-height: calc(100dvh - 8em);
+			width: auto;
+			aspect-ratio: 6 / 9;
+
+			picture img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			gap: 2em;
+			
+			.title {
+				display: flex;
+				flex-direction: column;
+				gap: 0.2em;
+				
+				h2 {
+					font-size: 3em;
+				}
+
+				.date {
+					font-size: 1.2em;
+				}
+			}
+
+			.downloads, .guide {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+
+				h3 {
+					font-size: 1.5em;
+				}
+
+				.section {
+					display: flex;
+					flex-direction: column;
+					gap: 0.5em;
+					margin-bottom: 1em;
+					font-size: 1.2em;
+				}
+
+				ul {
+					padding-left: 2em;
+					display: flex;
+					flex-direction: column;
+					gap: 1em;
+
+					&:has(li + span) {
+						gap: 0.5em;
+					}
+
+					span {
+						font-size: 0.8em;
+						font-style: italic;
+					}
+				}
+			}
+		}
+	}
+
+	.moreInfo {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		
+		h2 {
+			font-size: 2em;
+		}
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			gap: 2em;
+
+			.section {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+				
+				h3 {
+					font-size: 1.5em;
+				}
+
+				.pictures {
+					display: grid;
+					grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+					gap: 1em;
+
+					.pic {
+						height: 100%;
+						width: auto;
+						border: 3px solid #2977b8;
+						cursor: pointer;
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+				}
+
+				.description {
+					display: flex;
+					flex-direction: column;
+					gap: 0.5em;
+
+					p {
+						font-size: 1.2em;
+					}
+
+					span {
+						font-size: 0.9em;
+						font-style: italic;
+
+						a {
+							color: #2977b8;
+						}
+					}
+				}
+
+				p {
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
