@@ -105,7 +105,7 @@ const Ever17 = ({ setDark }: Props) => {
 								<h4>Why can't I play the remake that's available on Steam?</h4>
 								<p>The remake is not intended if it's your first time playing this game. You are better off playing it after finishing Ever17 - Himmel Edition, as the remake deviates a lot from the original game, spoiling a lot of major plot points early on, while also changing the script significantly, affecting the overall understanding of the plot.</p>
 								<p>Also, Uchikoshi and Nakazawa did not participate in the production of this remake at all, they were replaced by Shikura Chiyomaru (creator of the Science Adventure) for the production and Yamada Shichirou for the scenario reconstruction.</p>
-								<p>If you still want to experience this game after playing the original, you can <a href="https://store.steampowered.com/app/2392500/Ever_17__The_Out_of_Infinity/">purchase the game here.</a></p>
+								<p>If you still want to experience this game after playing the original, you can <a href="https://store.steampowered.com/app/2392500/Ever_17__The_Out_of_Infinity/" target='_blank'>purchase the game here.</a></p>
 							</div>
 						</div>
 					</div>

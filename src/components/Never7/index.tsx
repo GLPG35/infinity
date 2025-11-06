@@ -55,7 +55,7 @@ const Never7 = ({ setDark }: Props) => {
 						<h3>Guide (required)</h3>
 						<div className={styles.section}>
 							<ul>
-								<li><a href="https://www.kirikiribasara.com/2025/03/05/never7-completion-guide/">Kiri Kiri Basara - Completion Guide</a></li>
+								<li><a href="https://www.kirikiribasara.com/2025/03/05/never7-completion-guide/" target='_blank'>Kiri Kiri Basara - Completion Guide</a></li>
 								<span>Most of the dialogue will differ from the one in-game but it's fairly easy to figure it out</span>
 							</ul>
 						</div>
