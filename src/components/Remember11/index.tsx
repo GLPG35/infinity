@@ -4,14 +4,14 @@ import { AnimatePresence } from 'framer-motion'
 import ScreenshotVisualizer from '../ScreenshotVisualizer'
 
 type Props = {
-	setDark: (state: boolean) => void
+	setDark: (state: 'home'|'page'|false) => void
 }
 
 const Remember11 = ({ setDark }: Props) => {
 	const [viewSS, setViewSS] = useState<number>()
 	
 	useEffect(() => {
-		setDark(true)
+		setDark('page')
 	}, [])
 	
 	const screenshots = Array(5).fill(null).map((_, i) => `/screenshots/remember11/screenshot_${i + 1}.png`)
@@ -72,10 +72,24 @@ const Remember11 = ({ setDark }: Props) => {
 						<h3>Screenshots</h3>
 						<div className={styles.pictures}>
 							{screenshots.map((url, i) => (
-								<div className={styles.pic} onClick={() => setViewSS(i)}>
+								<div className={styles.pic} key={url} onClick={() => setViewSS(i)}>
 									<img src={url} alt="" />
 								</div>
 							))}
+						</div>
+					</div>
+					<div className={styles.section}>
+						<h3>FAQ</h3>
+						<div className={styles.questions}>
+							<div className={styles.question}>
+								<h4>How do I run the game? There are too many .exe files</h4>
+								<p>To run the game you need to execute the "R11-English-Gestalt.exe" file.</p>
+							</div>
+							<div className={styles.question}>
+								<h4>How do I use Magpie?</h4>
+								<p>First you need to start Magpie by double clicking the .exe file. Once Magpie is open you need to select a scaling factor (for this game 3x is recommended) and a scaling model. As mentioned above, CuNNy is highly recommended, but if you don't want to use an AI model you can use Lanczos.</p>
+								<p>After everything is configured properly, you can start the game (in windowed mode) and press the shortcut "Alt+Shift+Q" to activate the upscaling. With that done, a menu should appear on the top with a bunch of options, just select the option to play in fullscreen.</p>
+							</div>
 						</div>
 					</div>
 				</div>

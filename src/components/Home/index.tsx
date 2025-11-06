@@ -1,22 +1,26 @@
-import { useCallback, useEffect } from 'react'
-import { useLocation } from 'wouter'
-import never7Horizontal from '../../../public/never7_banner_horizontal.webp'
-import never7Vertical from '../../../public/never7_banner_vertical.webp'
-import ever17Horizontal from '../../../public/ever17_banner_horizontal.webp'
-import ever17Vertical from '../../../public/ever17_banner_vertical.webp'
-import remember11Horizontal from '../../../public/remember11_banner_horizontal.webp'
-import remember11Vertical from '../../../public/remember11_banner_vertical.webp'
+import { useCallback, useEffect, useRef } from 'react'
+import { Link, useLocation } from 'wouter'
+import never7Horizontal from '/never7_banner_horizontal.webp?url'
+import never7Vertical from '/never7_banner_vertical.webp?url'
+import ever17Horizontal from '/ever17_banner_horizontal.webp?url'
+import ever17Vertical from '/ever17_banner_vertical.webp?url'
+import remember11Horizontal from '/remember11_banner_horizontal.webp?url'
+import remember11Vertical from '/remember11_banner_vertical.webp?url'
 import styles from './styles.module.scss'
 import type { EmblaCarouselType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
+import { useInView } from 'framer-motion'
 
 type Props = {
-	setDark: (state: boolean) => void
+	setDark: (state: 'home'|'page'|false) => void,
+	setInView: (state: boolean) => void
 }
 
-const Home = ({ setDark }: Props) => {
+const Home = ({ setDark, setInView }: Props) => {
 	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ stopOnInteraction: false })])
+	const ref = useRef<HTMLElement>(null)
+	const inView = useInView(ref, { margin: '0px 0px -50% 0px', initial: false })
 	const [, navigate] = useLocation()
 	const images = [
 		{
@@ -38,7 +42,7 @@ const Home = ({ setDark }: Props) => {
 
 	const handleSlide = useCallback((emblaApi: EmblaCarouselType) => {
 		if (emblaApi.selectedScrollSnap() == 1) {
-			return setDark(true)
+			return setDark('home')
 		}
 
 		setDark(false)
@@ -51,6 +55,10 @@ const Home = ({ setDark }: Props) => {
 	useEffect(() => {
 		if (emblaApi) emblaApi.on('select', handleSlide)
 	}, [emblaApi, handleSlide])
+
+	useEffect(() => {
+		setInView(inView)
+	}, [inView])
 
 	return (
 		<>
@@ -68,7 +76,7 @@ const Home = ({ setDark }: Props) => {
 					))}
 				</div>
 			</div>
-			<article>
+			<article ref={ref}>
 				<section>
 					<h2>What is the <span>Infinity</span> Series?</h2>
 					<p>Infinity is a sci-fi visual novel trilogy developed by KID (5pb./MAGES. predecessor), written by Uchikoshi Kotaro (creator of Zero Escape & AI: The Somnium Files) and directed by Nakazawa Takumi (creator of I/O & Myself;Yourself).</p>
@@ -91,6 +99,13 @@ const Home = ({ setDark }: Props) => {
 				</section>
 				<section>
 					<span>Original text by @delta3pc</span>
+				</section>
+				<section>
+					<h2>Why can't I play the Steam releases?</h2>
+					<p>The only entries available right now on Steam are Never7 and Ever17 as "remastered" versions.</p>
+					<p>Never7 suffers from bad upscaling, a 16:9 aspect ratio that cuts sprites in half and also cuts backgrounds, a really bad translation and an ugly UI. This release is really inferior compared to the Eternal Edition with the HD Patch.</p>
+					<p>For Ever17 this is tricky, because in this case the Steam release is completely different compared to the Himmel Edition. This is because the Steam release is based on the Xbox 360 remake of the game. This one used 3D assets (these ones were changed in favor of the superior 3D models in the Steam release) and completely revamped backgrounds and music, and also new or edited CGs. They also changed the script in weird ways, as a result, changing the story and the experience as a whole.</p>
+					<p>As I said in the <Link to="/ever17">Ever17 FAQ section</Link>, you can play it if you want, but make sure to experience it after the Himmel Edition.</p>
 				</section>
 			</article>
 		</>

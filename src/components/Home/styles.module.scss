@@ -51,6 +51,10 @@ article {
 	gap: 2.5em;
 	position: relative;
 
+	a {
+		color: #2977b8;
+	}
+
 	&::before {
 		position: absolute;
 		z-index: 3;

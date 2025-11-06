@@ -3,12 +3,12 @@ import styles from './styles.module.scss'
 import { Link } from 'wouter'
 
 type Props = {
-	setDark: (state: boolean) => void
+	setDark: (state: 'home'|'page'|false) => void
 }
 
 const Ever17Guide = ({ setDark }: Props) => {
 	useEffect(() => {
-		setDark(true)
+		setDark('page')
 	}, [])
 	
 	return (

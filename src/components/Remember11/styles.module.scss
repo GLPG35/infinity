@@ -165,6 +165,22 @@
 				p {
 					font-size: 1.2em;
 				}
+
+				.questions {
+					display: flex;
+					flex-direction: column;
+					gap: 1.5em;
+					
+					.question {
+						display: flex;
+						flex-direction: column;
+						gap: 0.5em;
+	
+						h4 {
+							font-size: 1.2em;
+						}
+					}
+				}
 			}
 		}
 	}
