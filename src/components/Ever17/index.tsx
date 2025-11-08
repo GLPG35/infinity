@@ -3,6 +3,7 @@ import styles from './styles.module.scss'
 import { Link } from 'wouter'
 import { AnimatePresence } from 'framer-motion'
 import ScreenshotVisualizer from '../ScreenshotVisualizer'
+import { useSiteStore } from '../../store/useSiteStore'
 
 type Props = {
 	setDark: (state: 'home'|'page'|false) => void
@@ -10,6 +11,7 @@ type Props = {
 
 const Ever17 = ({ setDark }: Props) => {
 	const [viewSS, setViewSS] = useState<number>()
+	const language = useSiteStore(state => state.language)
 
 	useEffect(() => {
 		setDark('page')
@@ -31,6 +33,7 @@ const Ever17 = ({ setDark }: Props) => {
 						<img src="/ever17_banner_horizontal.webp" alt="" />
 					</picture>
 				</div>
+				{language == 'en' ?
 				<div className={styles.text}>
 					<div className={styles.title}>
 						<h2>Ever17 -the out of infinity- Himmel Edition</h2>
@@ -64,7 +67,43 @@ const Ever17 = ({ setDark }: Props) => {
 						</div>
 					</div>
 				</div>
+				: language == 'es' &&
+				<div className={styles.text}>
+					<div className={styles.title}>
+						<h2>Ever17 -the out of infinity- Himmel Edition</h2>
+						<div className={styles.date}>29 de agosto, 2002</div>
+					</div>
+					<div className={styles.downloads}>
+						<h3>Descargas</h3>
+						<div className={styles.section}>
+							<span>Juego base:</span>
+							<ul>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recomendado) <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Directa]</a></li>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 <a href="magnet:?xt=urn:btih:4d4dcda7b4ca5ff520ad3e2cf819f7ef639231b9&dn=Ever17%20-The%20Out%20of%20Infinity-%20%5BHimmel%20Edition%20v1.3%5D&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/ever-17-the-out-of-infinity" target='_blank'>[Directa]</a></li>
+							</ul>
+						</div>
+						<div className={styles.section}>
+							<span>Escalador de imagen (recomendado):</span>
+							<ul>
+								<li><a href="https://github.com/Blinue/Magpie/releases" target='_blank'>Magpie</a></li>
+								<span>El modelo CuNNy es el recomendado para mejores resultados, pero si no quieres usar un escalador de imagen por IA, siempre puedes usar algo como Lanczos</span>
+							</ul>
+						</div>
+					</div>
+					<div className={styles.guide}>
+						<h3>Guía (requerida)</h3>
+						<div className={styles.section}>
+							<ul>
+								<li>Incluída dentro del parche</li>
+								<span>El parche incluye un archivo (patch_readme.html) en la carpeta del juego, el cual incluye una guía en forma de diagrama de flujo.</span>
+								<span>Pero si quieres, puedes <Link to='/ever17/guide'>verla aquí</Link></span>
+							</ul>
+						</div>
+					</div>
+				</div>
+				}
 			</div>
+			{language == 'en' ?
 			<div className={styles.moreInfo}>
 				<h2>More information</h2>
 				<div className={styles.text}>
@@ -111,6 +150,54 @@ const Ever17 = ({ setDark }: Props) => {
 					</div>
 				</div>
 			</div>
+			: language == 'es' &&
+			<div className={styles.moreInfo}>
+				<h2>Más información</h2>
+				<div className={styles.text}>
+					<div className={styles.section}>
+						<h3>Descripción</h3>
+						<div className={styles.description}>
+							<p>Ever17 es una historia de siete individuos que quedan atrapados 51 metros debajo de la superficie en el parque temático subacuático 'LeMU'. Después del incidente, casi la mitad de LeMU se inunda, y tanto los caminos hacia la superficie como las comunicaciones están cortadas. Por si fuera poco, LeMU se encuentra bajo la constante presión severa del agua, limitando el tiempo disponible para encontrar una salida a tan sólo 119 horas. Escapar no es la única preocupación; sin embargo, muchas preguntas salen a la superficie sobre la legitimidad del accidente y si aquellos que quedaron atrapados fueron llevados allí con algún propósito.</p>
+							<span>[De <a href="https://en.wikipedia.org/wiki/Ever_17:_The_Out_of_Infinity" target='_blank'>Wikipedia</a>] (Traducido al español por @glpg35)</span>
+						</div>
+					</div>
+					<div className={styles.section}>
+						<h3>Capturas de pantalla</h3>
+						<div className={styles.pictures}>
+							{screenshots.map((url, i) => (
+								<div className={styles.pic} key={url} onClick={() => setViewSS(i)}>
+									<img src={url} alt="" />
+								</div>
+							))}
+						</div>
+					</div>
+					<div className={styles.section}>
+						<h3>Notas</h3>
+						<p>El parche de PS2 BGM + Voice + SFX restaura la música de fondo original, voces y efectos de sonido presentes en la versión de PS2. Este parche fue hecho porque la versión de PC tuvo que ser enormemente compresa (las PCs en los años 2000 eran inferiores a las consolas), por lo que el resultado final acabó escuchándose bastante mal. Como es mejor experimentar estos juegos de la mejor manera posible, este parche es altamente recomendado.</p>
+					</div>
+					<div className={styles.section}>
+						<h3>Preguntas frecuentes</h3>
+						<div className={styles.questions}>
+							<div className={styles.question}>
+								<h4>¿Cómo corro este juego? Hay muchos archivos .exe</h4>
+								<p>Para correr el juego necesitas ejecutar el archivo "ever17PC_us.exe" y dejar todas las opciones predeterminadas.</p>
+							</div>
+							<div className={styles.question}>
+								<h4>¿Cómo uso Magpie?</h4>
+								<p>Primero necesitas iniciar Magpie haciendo doble click en el archivo .exe. Una vez que Magpie esté abierto, necesitas elegir un factor de escalado (para este juego se recomienda el 3x) y un modelo de escalado. Como se menciona arriba, CuNNy es altamente recomendado, pero si no quieres usar un modelo de IA puedes usar Lanczos.</p>
+								<p>Después de que todo esté configurado apropiadamente, puedes iniciar el juego (en modo ventana) y presionar el atajo de teclado "Alt+Shift+Q" para activar el escalado. Una vez realizado, un menú debería aparecer en la parte superior de la pantalla con varias opciones, de las cuales sólo necesitas seleccionar la opción para jugar en pantalla completa.</p>
+							</div>
+							<div className={styles.question}>
+								<h4>¿Por qué no puedo jugar el remake disponible en Steam?</h4>
+								<p>El remake no está pensado para aquellas personas que juegan este juego por primera vez. Es preferible que lo juegues luego de terminar Ever17 - Himmel Edition, ya que el remake se desvía mucho del juego original, dando spoilers sobre puntos importantes de la trama en etapas muy tempranas del juego, y a su vez cambiando el guión significativamente, afectando la comprensión general de la trama.</p>
+								<p>Además, Uchikoshi y Nakazawa no participaron en la producción de este remake en ninguna forma, siendo reemplazados por Shikura Chiyomaru (creador de la Science Adventure) para la producción y Yamada Shichirou para la reconstrucción de escenarios.</p>
+								<p>Si aún así quieres experimentar el juego después de jugar el original, puedes <a href="https://store.steampowered.com/app/2392500/Ever_17__The_Out_of_Infinity/" target='_blank'>comprar el juego aquí.</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			}
 		</div>
 	)
 }

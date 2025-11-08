@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import { AnimatePresence } from 'framer-motion'
 import ScreenshotVisualizer from '../ScreenshotVisualizer'
+import { useSiteStore } from '../../store/useSiteStore'
 
 type Props = {
 	setDark: (state: 'home'|'page'|false) => void
@@ -10,6 +11,7 @@ type Props = {
 const Never7 = ({ setDark }: Props) => {
 	const [viewSS, setViewSS] = useState<number>()
 	const screenshots = Array(5).fill(null).map((_, i) => `/screenshots/never7/screenshot_${i + 1}.png`)
+	const language = useSiteStore(state => state.language)
 	
 	useEffect(() => {
 		setDark('page')
@@ -29,6 +31,7 @@ const Never7 = ({ setDark }: Props) => {
 						<img src="/never7_banner_horizontal.webp" alt="" />
 					</picture>
 				</div>
+				{language == 'en' ?
 				<div className={styles.text}>
 					<div className={styles.title}>
 						<h2>Never7 -the end of infinity- Eternal Edition</h2>
@@ -61,7 +64,42 @@ const Never7 = ({ setDark }: Props) => {
 						</div>
 					</div>
 				</div>
+				: language == 'es' &&
+				<div className={styles.text}>
+					<div className={styles.title}>
+						<h2>Never7 -the end of infinity- Eternal Edition</h2>
+						<div className={styles.date}>23 de marzo, 2000</div>
+					</div>
+					<div className={styles.downloads}>
+						<h3>Descargas</h3>
+						<div className={styles.section}>
+							<span>Juego base:</span>
+							<ul>
+								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP ENG Subs] (Recomendado) <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-eng" target='_blank'>[Directa]</a></li>
+								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP SPA Subs] <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-spa" target='_blank'>[Directa]</a></li>
+								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 <a href="https://www.mediafire.com/file/nshjldhr3zzm760/n7e.love/file" target='_blank'>[Directa]</a></li>
+							</ul>
+						</div>
+						<div className={styles.section}>
+							<span>Motor requerido para correrlo:</span>
+							<ul>
+								<li><a href="https://love2d.org/" target='_blank'>LÖVE Engine</a></li>
+							</ul>
+						</div>
+					</div>
+					<div className={styles.guide}>
+						<h3>Guía (requerida)</h3>
+						<div className={styles.section}>
+							<ul>
+								<li><a href="https://www.kirikiribasara.com/2025/03/05/never7-completion-guide/" target='_blank'>Kiri Kiri Basara - Completion Guide</a></li>
+								<span>La mayoría de los diálogos son diferentes a los del juego pero es bastante fácil de entender</span>
+							</ul>
+						</div>
+					</div>
+				</div>
+				}
 			</div>
+			{language == 'en' ?
 			<div className={styles.moreInfo}>
 				<h2>More information</h2>
 				<div className={styles.text}>
@@ -90,6 +128,36 @@ const Never7 = ({ setDark }: Props) => {
 					</div>
 				</div>
 			</div>
+			: language == 'es' &&
+			<div className={styles.moreInfo}>
+				<h2>Más información</h2>
+				<div className={styles.text}>
+					<div className={styles.section}>
+						<h3>Descripción</h3>
+						<div className={styles.description}>
+							<p>Juegas como Makoto, un estudiante que nunca va a sus clases en la universidad. Como castigo, tienes que asistir a un seminario extra en una isla con otros compañeros de clase. Sin embargo, cuando llegas a la isla, cosas extrañas empiezan a suceder. Una chica es encontrada muerta el 6 de abril, con un pequeño cascabel en su mano. Inmediatamente después, te encuentras a tí mismo en la cama y miras la fecha... ¡1 de abril! ¿Fue la visión de la chica sólo un sueño, o posees algún poder para predecir futuros eventos? Esto es lo que tendrás que averiguar, mientras que una serie de muertes extrañas hacen que tu seminario sea mucho más emocionante de lo que habías pensado.</p>
+							<span>[De <a href="http://www.mobygames.com/game/dreamcast/never7-the-end-of-infinity" target='_blank'>Moby Games</a>] (Traducido al español por @glpg35)</span>
+						</div>
+					</div>
+					<div className={styles.section}>
+						<h3>Capturas de pantalla</h3>
+						<div className={styles.pictures}>
+							{screenshots.map((url, i) => (
+								<div className={styles.pic} onClick={() => setViewSS(i)} key={url}>
+									<img src={url} alt="" />
+								</div>
+							))}
+						</div>
+					</div>
+					<div className={styles.section}>
+						<h3>Notas</h3>
+						<p>El parche en HD está incompleto, pero es altamente recomendado. Todos los fondos y CGs fueron redibujados en HD, pero la mayoría de los sprites se encuentran en la resolución original (con algunas excepciones).</p>
+						<p>El juego aún contiene algunas faltas de ortografía, las cuales están pendientes de resolverse en un futuro cercano.</p>
+						<p>El OP con subtítulos en inglés fue hecho por mí (@glpg35) y la versión en español fue hecha por @delta3pc. Estos subtítulos no son oficiales de ninguna forma, y puede que haya algunos errores (especialmente en la versión en inglés).</p>
+					</div>
+				</div>
+			</div>
+			}
 		</div>
 	)
 }
