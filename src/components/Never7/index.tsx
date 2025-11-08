@@ -153,7 +153,7 @@ const Never7 = ({ setDark }: Props) => {
 						<h3>Notas</h3>
 						<p>El parche en HD está incompleto, pero es altamente recomendado. Todos los fondos y CGs fueron redibujados en HD, pero la mayoría de los sprites se encuentran en la resolución original (con algunas excepciones).</p>
 						<p>El juego aún contiene algunas faltas de ortografía, las cuales están pendientes de resolverse en un futuro cercano.</p>
-						<p>El OP con subtítulos en inglés fue hecho por mí (@glpg35) y la versión en español fue hecha por @delta3pc. Estos subtítulos no son oficiales de ninguna forma, y puede que haya algunos errores (especialmente en la versión en inglés).</p>
+						<p>El OP con subtítulos en inglés fue hecho por mí (@glpg35) y la versión en español fue hecha por @delta3pc. Estos subtítulos no son oficiales de ninguna forma, y puede que hayan algunos errores (especialmente en la versión en inglés).</p>
 					</div>
 				</div>
 			</div>
