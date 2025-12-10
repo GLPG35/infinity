@@ -66,6 +66,22 @@ const Ever17 = ({ setDark }: Props) => {
 							</ul>
 						</div>
 					</div>
+					<div className={styles.sideContent}>
+						<h3>Side content</h3>
+						<div className={styles.section}>
+							<ul>
+								<span>This content must be watched after finishing the game, as it contains giant spoilers about the game's ending.</span>
+								<li>
+									<div className={styles.spoilerContent}>
+										Drama CD - <details><summary>[Click to show big spoiler]</summary>2035</details> (ENG Subs) <a href="https://www.youtube.com/watch?v=5F_TlQjRdmU">[YouTube]</a>
+									</div>
+								</li>
+								<li>
+									Drama CD - After You've Gone (Video with ENG Subs coming soon)
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				: language == 'es' &&
 				<div className={styles.text}>
@@ -97,6 +113,22 @@ const Ever17 = ({ setDark }: Props) => {
 								<li>Incluída dentro del parche</li>
 								<span>El parche incluye un archivo (patch_readme.html) en la carpeta del juego, el cual incluye una guía en forma de diagrama de flujo.</span>
 								<span>Pero si quieres, puedes <Link to='/ever17/guide'>verla aquí</Link></span>
+							</ul>
+						</div>
+					</div>
+					<div className={styles.sideContent}>
+						<h3>Contenido complementario</h3>
+						<div className={styles.section}>
+							<ul>
+								<span>Este contenido debe visualizarse una vez terminado el juego, ya que contiene spoilers gigantes sobre el final del juego.</span>
+								<li>
+									<div className={styles.spoilerContent}>
+										CD Drama - <details><summary>[Click para mostrar gran spoiler]</summary>2035</details> (ENG Subs) <a href="https://www.youtube.com/watch?v=5F_TlQjRdmU">[YouTube]</a>
+									</div>
+								</li>
+								<li>
+									CD Drama - After You've Gone (Video con subs en inglés pronto)
+								</li>
 							</ul>
 						</div>
 					</div>
