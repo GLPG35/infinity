@@ -120,14 +120,14 @@ const Ever17 = ({ setDark }: Props) => {
 						<h3>Contenido complementario</h3>
 						<div className={styles.section}>
 							<ul>
-								<span>Este contenido debe visualizarse una vez terminado el juego, ya que contiene spoilers gigantes sobre el final del juego.</span>
+								<span>Este contenido debe visualizarse una vez terminado el juego, ya que contiene spoilers gigantes sobre el final del mismo.</span>
 								<li>
 									<div className={styles.spoilerContent}>
 										CD Drama - <details><summary>[Click para mostrar gran spoiler]</summary>2035</details> (ENG Subs) <a href="https://www.youtube.com/watch?v=5F_TlQjRdmU">[YouTube]</a>
 									</div>
 								</li>
 								<li>
-									CD Drama - After You've Gone (Video con subs en inglés pronto)
+									CD Drama - After You've Gone (Video con subtítulos en inglés pronto)
 								</li>
 							</ul>
 						</div>

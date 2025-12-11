@@ -65,7 +65,7 @@
 				}
 			}
 
-			.downloads, .guide {
+			.downloads, .guide, .sideContent {
 				display: flex;
 				flex-direction: column;
 				gap: 0.5em;
@@ -95,6 +95,30 @@
 					span {
 						font-size: 0.8em;
 						font-style: italic;
+					}
+
+					li {
+						.spoilerContent {
+							display: flex;
+							gap: 0.3em;
+
+							details {
+								display: flex;
+
+								&[open] {
+									summary {
+										display: none;
+									}
+								}
+	
+								summary {
+									outline: none;
+									list-style: none;
+									cursor: pointer;
+									user-select: none;
+								}
+							}
+						}
 					}
 				}
 			}

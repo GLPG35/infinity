@@ -57,6 +57,20 @@ const Remember11 = ({ setDark }: Props) => {
 					<div className={styles.guide}>
 						<h3>Guide not required</h3>
 					</div>
+					<div className={styles.sideContent}>
+						<h3>Side content</h3>
+						<div className={styles.section}>
+							<ul>
+								<span>This content must be watched after finishing the game, as it contains giant spoilers about the game's ending.</span>
+								<li>
+									Drama CD - Remains (Video with ENG Subs coming soon)
+								</li>
+								<li>
+									Drama CD - Day After Day (Not translated for now)
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				: language == 'es' &&
 				<div className={styles.text}>
@@ -82,6 +96,20 @@ const Remember11 = ({ setDark }: Props) => {
 					</div>
 					<div className={styles.guide}>
 						<h3>Guía no necesaria</h3>
+					</div>
+					<div className={styles.sideContent}>
+						<h3>Contenido complementario</h3>
+						<div className={styles.section}>
+							<ul>
+								<span>Este contenido debe visualizarse una vez terminado el juego, ya que contiene spoilers gigantes sobre el final del mismo.</span>
+								<li>
+									Drama CD - Remains (Video con subtítulos en inglés pronto)
+								</li>
+								<li>
+									Drama CD - Day After Day (No traducido por ahora)
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				}
