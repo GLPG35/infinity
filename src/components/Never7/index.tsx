@@ -42,8 +42,8 @@ const Never7 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Base game:</span>
 							<ul>
-								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP ENG Subs] (Recommended) <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-eng" target='_blank'>[Direct]</a></li>
-								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP SPA Subs] <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-spa" target='_blank'>[Direct]</a></li>
+								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP ENG Subs] (Recommended) <a href="magnet:?xt=urn:btih:IH7KK65ZBKGKDVDRB73LAF5WSJRVDX4G&dn=never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-eng&tr.1=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.2=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.3=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-eng" target='_blank'>[Direct]</a></li>
+								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP SPA Subs] <a href="magnet:?xt=urn:btih:CCHWZQFYXCFDK4DO3ECVPZ5E4CGQL3D3&dn=never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-spa&tr.1=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.2=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.3=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-spa" target='_blank'>[Direct]</a></li>
 								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 <a href="https://www.mediafire.com/file/nshjldhr3zzm760/n7e.love/file" target='_blank'>[Direct]</a></li>
 							</ul>
 						</div>
@@ -75,8 +75,8 @@ const Never7 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Juego base:</span>
 							<ul>
-								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP ENG Subs] (Recomendado) <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-eng" target='_blank'>[Directa]</a></li>
-								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP SPA Subs] <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-spa" target='_blank'>[Directa]</a></li>
+								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP ENG Subs] (Recomendado) <a href="magnet:?xt=urn:btih:IH7KK65ZBKGKDVDRB73LAF5WSJRVDX4G&dn=never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-eng&tr.1=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.2=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.3=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-eng" target='_blank'>[Directa]</a></li>
+								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 [HD Patch][OP SPA Subs] <a href="magnet:?xt=urn:btih:CCHWZQFYXCFDK4DO3ECVPZ5E4CGQL3D3&dn=never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-spa&tr.1=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.2=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.3=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/never-7-the-end-of-infinity-eternal-edition-v-0.6.1-hd-patch-op-spa" target='_blank'>[Directa]</a></li>
 								<li>Never7 -the end of infinity- Eternal Edition v0.6.1 <a href="https://www.mediafire.com/file/nshjldhr3zzm760/n7e.love/file" target='_blank'>[Directa]</a></li>
 							</ul>
 						</div>

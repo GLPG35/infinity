@@ -63,7 +63,7 @@ const Remember11 = ({ setDark }: Props) => {
 							<ul>
 								<span>This content must be watched after finishing the game, as it contains giant spoilers about the game's ending.</span>
 								<li>
-									Drama CD - Remains (Video with ENG Subs coming soon)
+									Drama CD - Remains (ENG Subs) <a href="https://www.youtube.com/watch?v=tkZ_LOIxeLI">[YouTube]</a>
 								</li>
 								<li>
 									Drama CD - Day After Day (Not translated for now)
@@ -103,7 +103,7 @@ const Remember11 = ({ setDark }: Props) => {
 							<ul>
 								<span>Este contenido debe visualizarse una vez terminado el juego, ya que contiene spoilers gigantes sobre el final del mismo.</span>
 								<li>
-									Drama CD - Remains (Video con subtítulos en inglés pronto)
+									Drama CD - Remains (ENG Subs) <a href="https://www.youtube.com/watch?v=tkZ_LOIxeLI">[YouTube]</a>
 								</li>
 								<li>
 									Drama CD - Day After Day (No traducido por ahora)
