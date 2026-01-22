@@ -44,8 +44,8 @@ const Ever17 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Base game:</span>
 							<ul>
-								<li>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recommended) <a href="magnet:?xt=urn:btih:3EWP7TMT45NAOP77SAP4NBU3BYYDT4AW&dn=ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch&tr.1=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.2=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.3=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Direct]</a></li>
-								<li>Ever17 -the out of infinity- Himmel Edition v1.3 <a href="magnet:?xt=urn:btih:4d4dcda7b4ca5ff520ad3e2cf819f7ef639231b9&dn=Ever17%20-The%20Out%20of%20Infinity-%20%5BHimmel%20Edition%20v1.3%5D&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/ever-17-the-out-of-infinity" target='_blank'>[Direct]</a></li>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recommended) <a href="https://archive.org/download/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Direct]</a></li>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 <a href="https://archive.org/download/ever-17-the-out-of-infinity/ever-17-the-out-of-infinity_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever-17-the-out-of-infinity" target='_blank'>[Direct]</a></li>
 							</ul>
 						</div>
 						<div className={styles.section}>
@@ -94,8 +94,8 @@ const Ever17 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Juego base:</span>
 							<ul>
-								<li>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recomendado) <a href="magnet:?xt=urn:btih:3EWP7TMT45NAOP77SAP4NBU3BYYDT4AW&dn=ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch&tr.1=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.2=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce&tr.3=http%3A%2F%2Fbt2.archive.org%3A6969%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Directa]</a></li>
-								<li>Ever17 -the out of infinity- Himmel Edition v1.3 <a href="magnet:?xt=urn:btih:4d4dcda7b4ca5ff520ad3e2cf819f7ef639231b9&dn=Ever17%20-The%20Out%20of%20Infinity-%20%5BHimmel%20Edition%20v1.3%5D&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce">[Torrent]</a> <a href="https://archive.org/details/ever-17-the-out-of-infinity" target='_blank'>[Directa]</a></li>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recomendado) <a href="https://archive.org/download/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Directa]</a></li>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 <a href="https://archive.org/download/ever-17-the-out-of-infinity/ever-17-the-out-of-infinity_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever-17-the-out-of-infinity" target='_blank'>[Directa]</a></li>
 							</ul>
 						</div>
 						<div className={styles.section}>
