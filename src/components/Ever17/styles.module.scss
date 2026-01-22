@@ -99,11 +99,11 @@
 
 					li {
 						.spoilerContent {
-							display: flex;
+							display: inline-block;
 							gap: 0.3em;
 
 							details {
-								display: flex;
+								display: inline-block;
 
 								&[open] {
 									summary {
