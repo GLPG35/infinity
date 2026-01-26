@@ -43,7 +43,7 @@ const Remember11 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Base game:</span>
 							<ul>
-								<li>Remember11 -the age of infinity- Gestalt Edition v1.2.1 <a href="magnet:?xt=urn:btih:d1f46b0156ef894f55746b7afcf95465f7d761cc&dn=Remember11%20-the%20age%20of%20infinity-%20%5BGestalt%20Edition%20v1.2.1%5D&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce">[Torrent]</a> <a href="https://community.pcgamingwiki.com/files/file/2606-remember11-the-age-of-infinity-gestalt-edition/" target='_blank'>[Direct]</a></li>
+								<li>Remember11 -the age of infinity- Gestalt Edition v1.3.0 <a href="https://archive.org/download/remember11-the-age-of-infinity-gestalt-edition-v1.3.0/remember11-the-age-of-infinity-gestalt-edition-v1.3.0_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/remember11-the-age-of-infinity-gestalt-edition-v1.3.0" target='_blank'>[Direct]</a></li>
 							</ul>
 						</div>
 						<div className={styles.section}>
@@ -83,7 +83,7 @@ const Remember11 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Juego base:</span>
 							<ul>
-								<li>Remember11 -the age of infinity- Gestalt Edition v1.2.1 <a href="magnet:?xt=urn:btih:d1f46b0156ef894f55746b7afcf95465f7d761cc&dn=Remember11%20-the%20age%20of%20infinity-%20%5BGestalt%20Edition%20v1.2.1%5D&tr=http%3A%2F%2Fnyaa.tracker.wf%3A7777%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce">[Torrent]</a> <a href="https://community.pcgamingwiki.com/files/file/2606-remember11-the-age-of-infinity-gestalt-edition/" target='_blank'>[Directa]</a></li>
+								<li>Remember11 -the age of infinity- Gestalt Edition v1.3.0 <a href="https://archive.org/download/remember11-the-age-of-infinity-gestalt-edition-v1.3.0/remember11-the-age-of-infinity-gestalt-edition-v1.3.0_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/remember11-the-age-of-infinity-gestalt-edition-v1.3.0" target='_blank'>[Directa]</a></li>
 							</ul>
 						</div>
 						<div className={styles.section}>
@@ -147,7 +147,7 @@ const Remember11 = ({ setDark }: Props) => {
 							<div className={styles.question}>
 								<h4>How do I use Magpie?</h4>
 								<p>First you need to start Magpie by double clicking the .exe file. Once Magpie is open you need to select a scaling factor (for this game 3x is recommended) and a scaling model. As mentioned above, CuNNy is highly recommended, but if you don't want to use an AI model you can use Lanczos.</p>
-								<p>After everything is configured properly, you can start the game (in windowed mode) and press the shortcut "Alt+Shift+Q" to activate the upscaling. With that done, a menu should appear on the top with a bunch of options, just select the option to play in fullscreen.</p>
+								<p>After everything is configured properly, you can start the game (in windowed mode), then select the maximum available resolution (1280x960) and press the shortcut "Alt+Shift+Q" to activate the upscaling. With that done, a menu should appear on the top with a bunch of options, just select the option to play in fullscreen.</p>
 							</div>
 						</div>
 					</div>
@@ -186,7 +186,7 @@ const Remember11 = ({ setDark }: Props) => {
 							<div className={styles.question}>
 							<h4>¿Cómo uso Magpie?</h4>
 								<p>Primero necesitas iniciar Magpie haciendo doble click en el archivo .exe. Una vez que Magpie esté abierto, necesitas elegir un factor de escalado (para este juego se recomienda el 3x) y un modelo de escalado. Como se menciona arriba, CuNNy es altamente recomendado, pero si no quieres usar un modelo de IA puedes usar Lanczos.</p>
-								<p>Después de que todo esté configurado apropiadamente, puedes iniciar el juego (en modo ventana) y presionar el atajo de teclado "Alt+Shift+Q" para activar el escalado. Una vez realizado, un menú debería aparecer en la parte superior de la pantalla con varias opciones, de las cuales sólo necesitas seleccionar la opción para jugar en pantalla completa.</p>
+								<p>Después de que todo esté configurado apropiadamente, puedes iniciar el juego (en modo ventana), seleccionar la resolución más alta disponible (1280x960) y presionar el atajo de teclado "Alt+Shift+Q" para activar el escalado. Una vez realizado, un menú debería aparecer en la parte superior de la pantalla con varias opciones, de las cuales sólo necesitas seleccionar la opción para jugar en pantalla completa.</p>
 							</div>
 						</div>
 					</div>
