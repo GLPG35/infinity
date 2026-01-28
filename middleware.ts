@@ -1,5 +1,5 @@
 export const config = {
-	matcher: ['/*']
+	matcher: ['/:page*']
 }
 
 export default async function middleware(req: Request) {
