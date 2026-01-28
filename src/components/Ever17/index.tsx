@@ -44,12 +44,8 @@ const Ever17 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Base game:</span>
 							<ul>
-								<li className={styles.disabled} title='Links disabled for now as apparently this version of the game crashes'>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recommended) <a href="https://archive.org/download/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Direct]</a></li>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recommended) <a href="https://archive.org/download/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Direct]</a></li>
 								<li>Ever17 -the out of infinity- Himmel Edition v1.3 <a href="https://archive.org/download/ever-17-the-out-of-infinity/ever-17-the-out-of-infinity_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever-17-the-out-of-infinity" target='_blank'>[Direct]</a></li>
-							</ul>
-							<span>Patch (only if you download the unpatched version of the game):</span>
-							<ul>
-								<li>Ever17 PS2 BGM + Voice + SFX Patch <a href="https://drive.google.com/drive/folders/1X-hYIMS_wWkChEqikCxSomaRJQm3DBF1?usp=sharing" target='_blank'>[Drive]</a> <a href="https://mega.nz/folder/NrAEVBhC#pSg3_GGKMh0YA38V_SjjiA">[Mega]</a></li>
 							</ul>
 						</div>
 						<div className={styles.section}>
@@ -98,12 +94,8 @@ const Ever17 = ({ setDark }: Props) => {
 						<div className={styles.section}>
 							<span>Juego base:</span>
 							<ul>
-								<li className={styles.disabled} title='Links deshabilitados por ahora ya que aparentemente esta versión del juego crashea'>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recomendado) <a href="https://archive.org/download/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Directa]</a></li>
+								<li>Ever17 -the out of infinity- Himmel Edition v1.3 [PS2 BGM + Voice + SFX Patch] (Recomendado) <a href="https://archive.org/download/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever17-the-out-of-infinity-himmel-edition-v1.3-ps2-bgm-voice-sfx-patch" target='_blank'>[Directa]</a></li>
 								<li>Ever17 -the out of infinity- Himmel Edition v1.3 <a href="https://archive.org/download/ever-17-the-out-of-infinity/ever-17-the-out-of-infinity_archive.torrent">[Torrent]</a> <a href="https://archive.org/details/ever-17-the-out-of-infinity" target='_blank'>[Directa]</a></li>
-							</ul>
-							<span>Parche (sólo si descargas el juego base sin parchear):</span>
-							<ul>
-								<li>Ever17 PS2 BGM + Voice + SFX Patch <a href="https://drive.google.com/drive/folders/1X-hYIMS_wWkChEqikCxSomaRJQm3DBF1?usp=sharing" target='_blank'>[Drive]</a> <a href="https://mega.nz/folder/NrAEVBhC#pSg3_GGKMh0YA38V_SjjiA">[Mega]</a></li>
 							</ul>
 						</div>
 						<div className={styles.section}>
@@ -181,10 +173,6 @@ const Ever17 = ({ setDark }: Props) => {
 								<p>After everything is configured properly, you can start the game (in windowed mode) and press the shortcut "Alt+Shift+Q" to activate the upscaling. With that done, a menu should appear on the top with a bunch of options, just select the option to play in fullscreen.</p>
 							</div>
 							<div className={styles.question}>
-								<h4>How do I apply the patch separately?</h4>
-								<p>First download the patch from the Downloads section and unzip the compressed file. That should leave you with an .exe file. Execute it and when you're prompted to select a folder to apply the patch, DON'T SELECT THE GAME FOLDER, just select a random folder in your system, and the application will start extracting the game files. Once the application finishes extracting the files, you'll see a new folder inside the one you selected previously. Enter the folder, copy its contents and paste them inside the game folder, replacing all of the files when you're prompted to.</p>
-							</div>
-							<div className={styles.question}>
 								<h4>Why can't I play the remake that's available on Steam?</h4>
 								<p>The remake is not intended if it's your first time playing this game. You are better off playing it after finishing Ever17 - Himmel Edition, as the remake deviates a lot from the original game, spoiling a lot of major plot points early on, while also changing the script significantly, affecting the overall understanding of the plot.</p>
 								<p>Also, Uchikoshi and Nakazawa did not participate in the production of this remake at all, they were replaced by Shikura Chiyomaru (creator of the Science Adventure) for the production and Yamada Shichirou for the scenario reconstruction.</p>
@@ -230,10 +218,6 @@ const Ever17 = ({ setDark }: Props) => {
 								<h4>¿Cómo uso Magpie?</h4>
 								<p>Primero necesitas iniciar Magpie haciendo doble click en el archivo .exe. Una vez que Magpie esté abierto, necesitas elegir un factor de escalado (para este juego se recomienda el 3x) y un modelo de escalado. Como se menciona arriba, CuNNy es altamente recomendado, pero si no quieres usar un modelo de IA puedes usar Lanczos.</p>
 								<p>Después de que todo esté configurado apropiadamente, puedes iniciar el juego (en modo ventana) y presionar el atajo de teclado "Alt+Shift+Q" para activar el escalado. Una vez realizado, un menú debería aparecer en la parte superior de la pantalla con varias opciones, de las cuales sólo necesitas seleccionar la opción para jugar en pantalla completa.</p>
-							</div>
-							<div className={styles.question}>
-								<h4>¿Cómo aplico el parche de forma independiente?</h4>
-								<p>Primero descarga el parche desde la sección de Descargas y descomprime el archivo descargado. Eso debería dejarte con un archivo .exe. Ejecútalo y la aplicación te pedirá que selecciones una carpeta para aplicar el parche, NO SELECCIONES LA CARPETA DEL JUEGO, sólo selecciona una carpeta cualquiera de tu sistema y la aplicación empezará a extraer los archivos del juego. Una vez que termine la extracción, verás una nueva carpeta dentro de la que seleccionaste anteriormente. Entra a la carpeta, copia los contenidos de la misma y pégalos dentro de la carpeta del juego, reemplazando todos los archivos cuando se te pida.</p>
 							</div>
 							<div className={styles.question}>
 								<h4>¿Por qué no puedo jugar el remake disponible en Steam?</h4>
