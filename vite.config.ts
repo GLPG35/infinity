@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     vercel({
+      rewrites: [{ source: '/(.*)', destination: '/index.html' }],
       middleware: './middleware.ts'
     })
   ],

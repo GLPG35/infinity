@@ -1,5 +1,6 @@
 export const config = {
-	matcher: ['/:page*']
+	matcher: ['/:page*'],
+	runtime: 'bun'
 }
 
 export default async function middleware(req: Request) {
