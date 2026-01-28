@@ -2,9 +2,9 @@ export const config = {
 	matcher: ['/*']
 }
 
-export default async function middleware(req) {
+export default async function middleware(req: Request) {
 	const url = req.url
-	const userAgent = req.headers.get('user-agent')
+	const userAgent = req.headers.get('user-agent') as string
 
 	const socialMediaCrawlerUserAgents = /Twitterbot|facebookexternalhit|Facebot|LinkedInBot|Pinterestbot|Slackbot|vkShare|W3C_Validator/i
 	const isSocialMediaCrawler = socialMediaCrawlerUserAgents.test(userAgent)
@@ -27,7 +27,7 @@ export default async function middleware(req) {
 	};
 
 	const hasSlash = url.split('/').pop() == ''
-	const splitUrl = url.split('/').pop()
+	const splitUrl = url.split('/').pop() as string
 
 	return new Response(`
 		<html>
