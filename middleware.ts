@@ -1,5 +1,5 @@
 export const config = {
-	matcher: ['/:page*'],
+	matcher: ['*'],
 	runtime: 'bun'
 }
 
@@ -11,7 +11,7 @@ export default async function middleware(req: Request) {
 	const socialMediaCrawlerUserAgents = /Twitterbot|facebookexternalhit|Facebot|LinkedInBot|Pinterestbot|Slackbot|vkShare|W3C_Validator/i
 	const isSocialMediaCrawler = socialMediaCrawlerUserAgents.test(userAgent)
 
-	if (!isSocialMediaCrawler) return new Response(null, { status: 200, headers: { Location: '/' } })
+	if (!isSocialMediaCrawler) return
 
 	const pages = {
 		'/never7': {
