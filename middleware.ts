@@ -3,31 +3,35 @@ export const config = {
 }
 
 export default async function middleware(req: Request) {
-	const url = req.url
+	const url = new URL(req.url)
+	const { pathname } = url
 	const userAgent = req.headers.get('user-agent') as string
 
 	const socialMediaCrawlerUserAgents = /Twitterbot|facebookexternalhit|Facebot|LinkedInBot|Pinterestbot|Slackbot|vkShare|W3C_Validator/i
 	const isSocialMediaCrawler = socialMediaCrawlerUserAgents.test(userAgent)
 
-	if (!isSocialMediaCrawler) return;
+	if (!isSocialMediaCrawler) return new Response(null, { status: 200, headers: { Location: '/' } })
 
 	const pages = {
-		never7: {
+		'/never7': {
 			title: 'Infinity Series - Never7',
 			image: 'https://infinityseri.es/never7_banner_horizontal.webp'
 		},
-		ever17: {
+		'/ever17': {
 			title: 'Infinity Series - Ever17',
 			image: 'https://infinityseri.es/ever17_banner_horizontal.webp'
 		},
-		remember11: {
+		'/ever17/guide': {
+			title: 'Infinity Series - Ever17 Guide',
+			image: 'https://infinityseri.es/ever17_banner_horizontal.webp'
+		},
+		'/remember11': {
 			title: 'Infinity Series - Remember11',
 			image: 'https://infinityseri.es/remember11_banner_horizontal.webp'
 		}
 	};
 
-	const hasSlash = url.split('/').pop() == ''
-	const splitUrl = url.split('/').pop() as string
+	const isHome = pathname == '/'
 
 	return new Response(`
 		<html>
@@ -38,20 +42,20 @@ export default async function middleware(req: Request) {
 			<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 			<link rel="manifest" href="/site.webmanifest">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<title>${hasSlash ? pages[splitUrl].title : 'Infinity Series'}</title>
+			<title>${!isHome ? pages[pathname].title : 'Infinity Series'}</title>
 			<meta name="description" content="This story is not over yet. Because only you are in the infinity loop." />
 			<meta property="og:type" content="website" />
-			<meta property="og:title" content="${hasSlash ? pages[splitUrl].title : 'Infinity Series'}" />
+			<meta property="og:title" content="${!isHome ? pages[pathname].title : 'Infinity Series'}" />
 			<meta property="og:description" content="This story is not over yet. Because only you are in the infinity loop." />
 			<meta property="og:url" content="https://infinityseri.es/" />
-			<meta property="og:image" content=${hasSlash ? pages[splitUrl].image : pages[Math.floor(Math.random() * 3)].image} />
+			<meta property="og:image" content=${!isHome ? pages[pathname].image : pages[Math.floor(Math.random() * 3)].image} />
 			<meta property="twitter:card" content="summary_large_image" />
 			<meta property="twitter:url" content="https://infinityseri.es/" />
-			<meta property="twitter:title" content="${hasSlash ? pages[splitUrl].title : 'Infinity Series'}" />
+			<meta property="twitter:title" content="${!isHome ? pages[pathname].title : 'Infinity Series'}" />
 			<meta property="twitter:description" content="This story is not over yet. Because only you are in the infinity loop." />
-			<meta property="twitter:image" content=${hasSlash ? pages[splitUrl].image : pages[Math.floor(Math.random() * 3)].image} />
+			<meta property="twitter:image" content=${!isHome ? pages[pathname].image : pages[Math.floor(Math.random() * 3)].image} />
 		</head>
-		<body><img src=${hasSlash ? pages[splitUrl].image : pages[Math.floor(Math.random() * 3)].image} /></body>
+		<body><img src=${!isHome ? pages[pathname].image : pages[Math.floor(Math.random() * 3)].image} /></body>
 		</html>
 	`, { headers: { 'content-type': 'text/html' } },)
 }
