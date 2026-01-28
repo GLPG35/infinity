@@ -52,5 +52,5 @@ export default async function middleware(req: Request) {
 			<meta property="twitter:image" content=${hasSlash ? pages[splitUrl].image : pages[Math.floor(Math.random() * 3)].image} />
 		</head>
 		</html>
-	`)
+	`, { headers: { 'content-type': 'text/html' } })
 }
