@@ -1,13 +1,13 @@
 {
   "name": "infinity",
   "private": true,
-  "version": "2.7.8",
+  "version": "2.6.0",
   "type": "module",
   "scripts": {
-    "dev": "vike dev",
-    "build": "tsc -b && vike build",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vike preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "embla-carousel": "^8.6.0",
@@ -18,7 +18,6 @@
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
     "sass": "^1.93.3",
-    "vike": "^0.4.252",
     "vite-plugin-vercel": "^9.1.1",
     "wouter": "^3.7.1",
     "zustand": "^5.0.8"
