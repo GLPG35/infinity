@@ -82,6 +82,12 @@
 					font-size: 1.2em;
 				}
 
+				span {
+					&:nth-child(n+2) {
+						margin-top: 1em;
+					}
+				}
+
 				ul {
 					padding-left: 2em;
 					display: flex;
@@ -98,6 +104,14 @@
 					}
 
 					li {
+						&.disabled {
+							opacity: 0.5;
+
+							&:active {
+								pointer-events: none;
+							}
+						}
+
 						.spoilerContent {
 							display: inline-block;
 							gap: 0.3em;
