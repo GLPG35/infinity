@@ -1,15 +1,15 @@
 export const config = {
-	matcher: ['/*']
+	matcher: ['/*'],
 }
 
 export default async function middleware(req: Request) {
-	const url = req.url
-	const userAgent = req.headers.get('user-agent') as string
+	const url = req.url;
+	const userAgent = req.headers.get('user-agent') as string;
 
-	const socialMediaCrawlerUserAgents = /Twitterbot|facebookexternalhit|Facebot|LinkedInBot|Pinterestbot|Slackbot|vkShare|W3C_Validator/i
-	const isSocialMediaCrawler = socialMediaCrawlerUserAgents.test(userAgent)
+	const socialMediaCrawlerUserAgents = /Twitterbot|facebookexternalhit|Facebot|LinkedInBot|Pinterestbot|Slackbot|vkShare|W3C_Validator/i;
+	const isSocialMediaCrawler = socialMediaCrawlerUserAgents.test(userAgent);
 
-	if (!isSocialMediaCrawler) return
+	if (!isSocialMediaCrawler) return;
 
 	const pages = {
 		never7: {
@@ -24,10 +24,10 @@ export default async function middleware(req: Request) {
 			title: 'Infinity Series - Remember11',
 			image: 'https://infinityseri.es/remember11_banner_horizontal.webp'
 		}
-	}
+	};
 
-	const hasSlash = url.split('/').pop() == ''
-	const splitUrl = url.split('/').pop() as string
+	const hasSlash = url.split('/').pop() == '';
+	const splitUrl = url.split('/').pop() as string;
 
 	return new Response(`
 		<html>
@@ -52,5 +52,5 @@ export default async function middleware(req: Request) {
 			<meta property="twitter:image" content=${hasSlash ? pages[splitUrl].image : pages[Math.floor(Math.random() * 3)].image} />
 		</head>
 		</html>
-	`, { headers: { 'content-type': 'text/html' } })
+	`, { headers: { 'content-type': 'text/html' } },);
 }
