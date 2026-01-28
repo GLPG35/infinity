@@ -51,6 +51,7 @@ export default async function middleware(req: Request) {
 			<meta property="twitter:description" content="This story is not over yet. Because only you are in the infinity loop." />
 			<meta property="twitter:image" content=${hasSlash ? pages[splitUrl].image : pages[Math.floor(Math.random() * 3)].image} />
 		</head>
+		<body><img src=${hasSlash ? pages[splitUrl].image : pages[Math.floor(Math.random() * 3)].image} /></body>
 		</html>
 	`, { headers: { 'content-type': 'text/html' } },)
 }
